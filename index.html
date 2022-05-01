@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+    Trabajo Práctico Integrador - "Conferencias"
+    Codo a Codo # 22036
+    Realizado por: Javier Sassone
+-->
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer></script>
+
+    <title>Conferencias</title>
+
+
+    <style>
+        header {
+            height: 100vh;
+        }
+        
+        header nav {
+            z-index: 1;
+        }
+        
+        header img.logo {
+            height: 60px;
+            margin-left: 3rem;
+            /* object-fit: contain; */
+        }
+        
+        footer nav {
+            padding-left: 7rem;
+            padding-right: 7rem;
+        }
+        
+        header .carousel img {
+            object-fit: cover;
+            filter: brightness(0.4);
+        }
+        
+        header .carousel a.btn-success {
+            background-color: #29a744;
+        }
+        
+        header .carousel-text {
+            top: 30%;
+        }
+        
+        .carousel,
+        .carousel-item,
+        .carousel-inner,
+        .carousel img {
+            height: 100vh;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <header class="position-relative">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-fixed top-0 w-100">
+            <div class="container-fluid d-flex justify-content-between" style="margin-right: 3rem;">
+                <div>
+                    <img src="imgs/codoacodo.png" alt="logo" class="logo">
+                    <a class="navbar-brand" href="#">Conf Bs As</a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Los oradores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">El lugar y la fecha</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Conviértete en orador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-success">Comprar tickets</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imgs/ba1.jpg" class="d-block w-100 bg-dark" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/ba2.jpg" class="d-block w-100 bg-dark" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/ba3.jpg" class="d-block w-100 bg-dark" alt="...">
+                </div>
+
+                <div class="carousel-text position-absolute end-0 text-white w-50 text-end p-5" style="margin-right: 3rem;">
+                    <h2 class="">Conf Bs As</h2>
+                    <p class="my-4 d-none d-lg-block">Llega por primera vez a Argentina un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de internet. Ven a conocer a los miembros del evento, a otros estudiantes de
+                        Codo a Codo y los oradores de primer nivel que tenemos para ti. ¡Te esperamos!</p>
+                    <div class="d-flex flex-wrap justify-content-end gap-2 my-4">
+                        <a href="#" class="btn btn-outline-light mx-2">Quiero ser orador</a>
+                        <a href="#" class="btn btn-success mx-2">Comprar tickets</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="my-5">
+        <section id="oradores " class="scroll-margin-top-15">
+            <p class="text-muted text-center my-0">CONOCE A LOS</p>
+            <h2 class="fw-bold text-center mb-4">ORADORES</h2>
+            <div class="container d-flex flex-wrap justify-content-around gap-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="imgs/steve.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="d-flex gap-2 mb-1">
+                            <button type="button" class="btn btn-sm btn-warning fw-bold py-0">Javascript</button>
+                            <button type="button" class="btn btn-sm btn-info fw-bold py-0" style="color: white;">React</button>
+                        </div>
+                        <h5 class="card-title">Steve Jobs</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto totam explicabo nemo quibusdam, sapiente laboriosam cupiditate quia ex consectetur cum veniam molestias dolore magni, amet reprehenderit consequuntur nulla soluta
+                            tempore!
+                        </p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imgs/bill.jpg" class="card-img-top" alt="... ">
+                    <div class="card-body">
+                        <div class="d-flex gap-2 mb-1">
+                            <button type="button" class="btn btn-sm btn-warning fw-bold py-0">Javascript</button>
+                            <button type="button" class="btn btn-sm btn-info fw-bold py-0" style="color: white;">React</button>
+                        </div>
+                        <h5 class="card-title">Bill Gates</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere at ab nulla, nostrum quia est earum officia voluptas inventore eligendi temporibus non similique ducimus error modi odio illo? Hic, ullam.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="imgs/ada.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="d-flex gap-2 mb-1">
+                            <button type="button" class="btn btn-sm btn-secondary fw-bold py-0">Negocios</button>
+                            <button type="button" class="btn btn-sm btn-danger fw-bold py-0">Startups</button>
+                        </div>
+                        <h5 class="card-title">Ada Lovelace</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quis ab voluptas cupiditate fuga consequuntur quas, porro alias doloribus corporis dolores quaerat iure blanditiis dicta nisi recusandae totam quisquam itaque?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <section id="lugarFecha" class="scroll-margin-top-20 my-5">
+        <div class="container-fluid text-white">
+            <div class="row">
+                <img src="imgs/honolulu.jpg" alt="" class="col-12 col-lg-6 p-0 border">
+                <div class="bg-dark p-3 col-lg-6 border">
+                    <h2>Bs As - Octubre</h2>
+                    <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos, Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana
+                        en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km2 de superficie).</p>
+                    <a href="#" class="btn btn-outline-light">Conocé más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="formOrador" class="text-center my-3">
+        <p class="text-muted my-0">CONVIÉRTETE EN UN</p>
+        <h2 class="fw-bold mb-2">ORADOR</h2>
+        <p>Anotate como orador para dar una <span style="text-decoration: underline dotted;">charla ignite</span>. ¡Contanos de qué querés hablar!</p>
+        <form action="">
+            <div class="container">
+                <div class="row justify-content-center">
+
+                    <div class="my-2 col-lg-4 px-2">
+                        <input type="text" placeholder="Nombre" class="form-control">
+                    </div>
+                    <div class="my-2 col-lg-4 px-2">
+                        <input type="text" placeholder="Apellido" class="form-control">
+                    </div>
+                    <div class="my-2 col-lg-8 px-2">
+                        <textarea cols="30" rows="3" placeholder="¿Sobre qué quieres hablar?" class="form-control fs-3"></textarea>
+                    </div>
+                    <p class="text-start col-lg-8">Recordá incluir un título para tu charla</p>
+                    <button type="button" class="btn col-lg-8" style="background-color: rgb(162, 204, 63); color: white;">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(34, 72, 99);">
+            <div class="container-fluid d-flex justify-content-between">
+                <div class="collapse navbar-collapse" id="navbarNav2">
+                    <ul class="navbar-nav w-100 d-flex justify-content-around align-items-center py-3 text-center">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" aria-current="page">Preguntas<br>frecuentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contactanos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Prensa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Conferencias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Términos y<br>condiciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Privacidad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Estudiantes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </footer>
+</body>
+
+</html>
