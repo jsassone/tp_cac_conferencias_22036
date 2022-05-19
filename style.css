@@ -1,0 +1,56 @@
+header nav {
+    z-index: 1;
+}
+
+header img.logo {
+    height: 60px;
+    margin-left: 3rem;
+    /* object-fit: contain; */
+}
+
+.tickets {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#pricebox {
+    background-color: lightblue;
+    border-radius: 5px;
+}
+
+#estudiante {
+    border: 3px solid lightblue;
+}
+
+#trainee {
+    border: 3px solid lightgreen;
+}
+
+#junior {
+    border: 3px solid lightgoldenrodyellow;
+}
+
+footer nav {
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
+header .carousel img {
+    object-fit: cover;
+    filter: brightness(0.4);
+}
+
+header .carousel a.btn-success {
+    background-color: #29a744;
+}
+
+header .carousel-text {
+    top: 30%;
+}
+
+.carousel,
+.carousel-item,
+.carousel-inner,
+.carousel img {
+    height: 100vh;
+}
